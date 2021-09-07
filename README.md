@@ -1,4 +1,4 @@
-# ![YumeLgo](extra\YUME_thumb.png) Project Yume
+# ![YumeLgo](extra/YUME_thumb.png) Project Yume
 OpenCV Computer vision Python/C++ research and algorithms
 
 
