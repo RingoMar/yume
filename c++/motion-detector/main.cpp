@@ -98,7 +98,7 @@ int main()
         if (frame.empty())
             break;
 
-        //								 y,		y+h				 x,		x+w
+        //                               y,		y+h				 x,		x+w
         Mat cropped_image = frame(Range(203, 203 + 401), Range(129, 129 + 1079));
 
         Mat thresh;
@@ -114,7 +114,7 @@ int main()
             double area = contourArea(contours[i]);
             if (area > 50)
             {
-                // cv::drawContours(frame, contours, i, cv::Scalar(0, 0, 0), -1); Uncomment to show mask
+                // cv::drawContours(frame, contours, i, cv::Scalar(0, 0, 0), -1); // Uncomment to show mask
 
                 Rect rect = boundingRect(contours[i]);
                 Point pt1, pt2;
@@ -124,7 +124,7 @@ int main()
                 pt2.x = pt1.x + rect.width;
                 pt2.y = pt1.y + rect.height;
 
-                // rectangle(frame, pt1, pt2, CV_RGB(255, 0, 255), 3); Uncomment to show individual dection
+                // rectangle(frame, pt1, pt2, CV_RGB(255, 0, 255), 3); // Uncomment to show individual dection
 
                 if (inRange(0, capture.get(CAP_PROP_FRAME_WIDTH) / 3, rect.x))
                 {

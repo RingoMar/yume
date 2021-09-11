@@ -1,5 +1,7 @@
 # ![YumeLgo](extra/YUME_thumb.png) Project Yume
 OpenCV Computer vision Python/C++ research and algorithms
+> ### Yume (f) -
+> From Japanese 夢 (yume) meaning "dream, vision".
 
 # Editor's Note
 This Project assumes you have prior knowledge of using Open CV/c++/python 
