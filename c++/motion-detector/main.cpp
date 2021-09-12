@@ -75,8 +75,8 @@ void region_3(cv::Mat frame)
     pt1.x = capture.get(CAP_PROP_FRAME_WIDTH) / 3 + capture.get(CAP_PROP_FRAME_WIDTH) / 3 + 4;
     pt1.y = 0 + 2;
 
-    pt2.x = pt1.x + wid - 4;
-    pt2.y = pt1.y + capture.get(CAP_PROP_FRAME_HEIGHT) - 4;
+    pt2.x = capture.get(CAP_PROP_FRAME_WIDTH) - 2 ;
+    pt2.y = pt1.y + capture.get(CAP_PROP_FRAME_HEIGHT) - 2;
 
     rectangle(frame, pt1, pt2, CV_RGB(0, 0, 255), 3);
 }
